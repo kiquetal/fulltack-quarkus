@@ -12,7 +12,7 @@ import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-@Provider
+
 public class NotFoundExceptionProvider implements ExceptionMapper<NotFoundException>
 {
     @Override
