@@ -10,6 +10,9 @@ jobs:
         environment: development
         steps:
         - uses: actions/checkout@v4
+          name: Checkout code
+        - name: Download fly
+          run: curl -L https://fly.io/install.sh | sh
         - name: Deploy to fly
           run: fly deploy
           env:
