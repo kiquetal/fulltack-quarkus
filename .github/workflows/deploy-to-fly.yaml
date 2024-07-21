@@ -13,6 +13,10 @@ jobs:
           name: Checkout code
         - name: Download fly
           run: curl -L https://fly.io/install.sh | sh
+        - name: Set environment for fly
+          run:  |
+               export FLYCTL_INSTALL="/home/runner/.fly"
+              export PATH="$FLYCTL_INSTALL/bin:$PATH"
         - name: Deploy to fly
           run: fly deploy
           env:
