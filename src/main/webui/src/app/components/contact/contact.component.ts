@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {BackendService} from "../../services/backend.service";
 import {Observer, Subscription} from "rxjs";
 
+
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -10,20 +11,24 @@ import {Observer, Subscription} from "rxjs";
   styleUrl: './contact.component.css'
 })
 export class ContactComponent implements OnInit {
+ result: string = " ";
 
-  constructor(private httpSerice : BackendService) {  }
+  constructor(private httpService : BackendService) {  }
 
   ngOnInit(): void {
-    this.httpSerice.obtainResponse("/hello").subscribe(this.observerData());
+    this.httpService.fetchData("/something").subscribe(this.observerData());
 
   }
 
   private observerData(): Observer<any>{
 
     return {
-      next: (value) => console.log(value),
-      error: (error) => console.log(error),
-      complete: () => console.log("completed  ")
+      complete : () => {},
+      next: (value) => {
+        console.log("Value",value);
+        this.result = value;
+      },
+      error: (error) => console.log("Found Error!!!",error)
     }
 
   }
