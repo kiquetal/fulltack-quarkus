@@ -1,0 +1,31 @@
+   .ui-state-error {
+     background-color: #f8d7da;
+     border-color: #f5c6cb;
+     color: #721c24;
+     padding: 10px;
+     border-radius: 4px;
+     margin-bottom: 16px;
+   }
+
+.ui-message {
+  display: flex;
+  align-items: center;
+}
+
+.ui-message-error {
+  display: flex;
+  align-items: center;
+}
+
+.ui-message-error-icon {
+  margin-right: 8px;
+  color: #721c24;
+}
+
+.ui-message-error-icon .pi {
+  font-size: 1.2em;
+}
+
+.ui-message-error-detail {
+  font-size: 1em;
+}

@@ -1,3 +1,12 @@
 <p>contact works!</p>
 
 <div> {{ result }}</div>
+
+<div class="ui-state-error" *ngIf="hasError">
+  <span class="ui-message ui-message-error">
+    <span class="ui-message-error-icon">
+      <i class="pi pi-fw pi-exclamation-triangle"></i>
+    </span>
+    <span class="ui-message-error-detail">Error: {{ errorMessage }}</span>
+  </span>
+</div>
