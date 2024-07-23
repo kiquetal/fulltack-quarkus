@@ -1,7 +1,7 @@
 export const environment = {
 	production: true,
 	url:{
-	endpoint:"http://localhost:8080"
+	endpoint:"https://profile.cresterida.me"
 	}
 
 };
