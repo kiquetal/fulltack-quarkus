@@ -1,7 +1,3 @@
-<p>contact works!</p>
-
-<div> {{ result }}</div>
-
 <div class="ui-state-error" *ngIf="hasError">
   <span class="ui-message ui-message-error">
     <span class="ui-message-error-icon">
@@ -11,4 +7,10 @@
   </span>
 </div>
 
-<div>updated from here</div>
+<div class="project-list">
+  <h2>Projects</h2>
+  <mat-list>
+    <mat-list-item *ngFor="let project of projects"><span class="color-list-item">{{ project }}</span></mat-list-item>
+  </mat-list>
+  <hr />
+</div>
