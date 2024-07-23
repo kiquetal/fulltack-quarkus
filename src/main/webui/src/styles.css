@@ -1,8 +1,63 @@
-html, body {
-  height: 100%;
+/* General styles for the application */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
-mat-sidenav-container {
-  height: 100%;
+.example-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the sidenav */
+mat-sidenav {
+  width: 250px;
+  background-color: #3f51b5;
+  color: white;
+}
+
+mat-nav-list {
+  padding: 0;
+}
+
+mat-list-item {
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+mat-list-item:hover {
+  background-color: #303f9f;
+}
+
+/* Styles for the main content area */
+mat-sidenav-content {
+  padding: 20px;
+  background-color: #fff;
+  flex-grow: 1;
+}
+
+/* Additional styles for specific pages */
+.router-outlet {
+  padding: 20px;
+}
+
+.about-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  margin: 10px 0;
+}
+
+.about-image {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
 }

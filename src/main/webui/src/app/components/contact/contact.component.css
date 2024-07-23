@@ -1,4 +1,17 @@
-   .ui-state-error {
+p {
+  color: #444; /* Slightly lighter grey text */
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Div styling */
+div {
+  color: #444; /* Same as paragraph color */
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.ui-state-error {
      background-color: #f8d7da;
      border-color: #f5c6cb;
      color: #721c24;
