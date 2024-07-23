@@ -15,7 +15,8 @@ import {MatList, MatListItem} from "@angular/material/list";
     NgForOf
   ],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  styleUrl: './contact.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class ContactComponent implements OnInit {
  result: string = " ";
