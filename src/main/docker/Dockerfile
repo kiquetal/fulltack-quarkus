@@ -1,9 +1,4 @@
     FROM registry.access.redhat.com/ubi8/openjdk-17:1.19
-
-    ENV LANGUAGE='en_US:en'
-
-    FROM registry.access.redhat.com/ubi8/openjdk-17:1.19
-
     ENV LANGUAGE='en_US:en'
 
     # Install necessary packages
